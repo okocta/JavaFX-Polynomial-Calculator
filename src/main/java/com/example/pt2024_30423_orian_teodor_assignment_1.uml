@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/PT2024_30423_Orian_Teodor/PT2024_30423_Orian_Teodor_Assignment_1/src/main/java/com/example/pt2024_30423_orian_teodor_assignment_1</OriginalElement>
+  <nodes>
+    <node x="-43.0" y="-14.0">com.example.pt2024_30423_orian_teodor_assignment_1.Polynomial</node>
+    <node x="-82.0" y="369.0">com.example.pt2024_30423_orian_teodor_assignment_1.MainController</node>
+    <node x="440.8876404494382" y="192.52247191011236">com.example.pt2024_30423_orian_teodor_assignment_1.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.pt2024_30423_orian_teodor_assignment_1.MainController" target="com.example.pt2024_30423_orian_teodor_assignment_1.Polynomial" relationship="TO_ONE">
+      <point x="75.5" y="-260.5" />
+      <point x="62.5" y="176.5" />
+    </edge>
+    <edge source="com.example.pt2024_30423_orian_teodor_assignment_1.MainController" target="com.example.pt2024_30423_orian_teodor_assignment_1.Polynomial" relationship="CREATE">
+      <point x="-75.5" y="-260.5" />
+      <point x="-6.5" y="354.0" />
+      <point x="19.5" y="354.0" />
+      <point x="-62.5" y="176.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6742424242424242" showDependencies="true" x="158.5000000000001" y="448.0" />
+  <SelectedNodes>
+    <node>com.example.pt2024_30423_orian_teodor_assignment_1.Polynomial</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

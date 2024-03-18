@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2024_30423_orian_teodor_assignment_1.MainController">
+   <children>
+      <ImageView fx:id="brandingImageView" fitHeight="439.0" fitWidth="627.0" layoutX="-13.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../images/gears-of-math-background-suitable-as-a-backdrop-for-projects-on-digital-and-computational-processes-math-and-modern-technologies-WWKXH7.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Ptextfield" layoutX="36.0" layoutY="84.0" prefHeight="34.0" prefWidth="196.0" promptText="P(x)=" style="-fx-background-color: fff;" />
+      <TextField fx:id="Qtextfield" layoutX="34.0" layoutY="167.0" prefHeight="34.0" prefWidth="196.0" promptText="Q(x)=" style="-fx-background-color: fff;" />
+      <Button layoutX="34.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleAdditionButtonClick" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: fff;" text="P(x)+Q(x)">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596231">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button layoutX="34.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleSubtractionButtonClick" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: fff;" text="P(x)-Q(x)">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.021052632480859756" green="0.021052632480859756" blue="0.021052632480859756" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button layoutX="109.0" layoutY="254.0" mnemonicParsing="false" onAction="#handlemultiplyButtonClick" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: fff;" text="P(x)*Q(x)">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button layoutX="109.0" layoutY="291.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" onAction="#divideButtonOnAction" style="-fx-background-color: fff;" text="P(x)/Q(x)">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09473684430122375" green="0.09473684430122375" blue="0.09473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button layoutX="182.0" layoutY="254.0" mnemonicParsing="false" onAction="#handlederiveButtonClick" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: fff;" text="P'(x)">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.0736842080950737" green="0.0736842080950737" blue="0.0736842080950737" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button layoutX="182.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleintegrateButtonClick" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: fff;" text="∫P(x)">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Line endX="-53.20001220703125" endY="-134.0" layoutX="374.0" layoutY="136.0" startX="-53.20001220703125" startY="266.0" strokeWidth="5.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.23157894611358643" green="0.22861988842487335" blue="0.054035086184740067" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <TextArea fx:id="Rtextfield" layoutX="358.0" layoutY="161.0" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: fff;" />
+      <AnchorPane layoutX="50.0" layoutY="210.0" prefHeight="31.0" prefWidth="183.0" style="-fx-background-color: fff;">
+         <children>
+            <Text layoutX="3.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" style="f: fff;-fx-highlight-fill: fff" text="Select Operation">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.029999999329447746" blue="0.029999999329447746" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="61.0" layoutY="128.0" prefHeight="34.0" prefWidth="44.0" style="-fx-background-color: fff;">
+         <children>
+            <Text layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q(x)">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="61.0" layoutY="43.0" prefHeight="37.0" prefWidth="44.0" style="-fx-background-color: fff;">
+         <children>
+            <Text layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #eco;" text="P(x)">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="389.0" layoutY="118.0" prefHeight="38.0" prefWidth="138.0" style="-fx-background-color: fff;">
+         <children>
+            <Text layoutX="8.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" wrappingWidth="121.9859619140625">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.029999999329447746" blue="0.029999999329447746" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="exitButton" layoutX="539.0" layoutY="11.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="26.0" prefWidth="53.0" style="-fx-background-color: FFF;" text="EXIT">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261363633202784">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.019999999552965164" blue="0.019999999552965164" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05263157933950424" green="0.019688108935952187" blue="0.019688108935952187" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <AnchorPane layoutX="384.0" layoutY="13.0" prefHeight="94.0" prefWidth="129.0" />
+   </children>
+</AnchorPane>
